@@ -1,0 +1,135 @@
+.intro {
+  background: #111111 url("../assets/images/bg-image.jpg") no-repeat center
+    bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 90vh;
+  min-height: 720px;
+  display: table;
+  position: relative;
+  z-index: -1;
+}
+
+.intro-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #111111;
+  opacity: 0.1;
+  z-index: -2;
+}
+
+.intro-content {
+  font-size: 32px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin-top: 200px;
+  color: white;
+  /* border: 1px solid white; */
+}
+
+.intro-text {
+  flex: 1;
+}
+
+.header-subtitle {
+  text-align: left;
+}
+
+.gradient-text1 {
+  background: linear-gradient(
+    90deg,
+    rgb(221, 222, 224),
+    rgb(202, 110, 200),
+    rgb(243, 111, 111),
+    rgb(113, 81, 81),
+    rgb(208, 161, 74),
+    rgb(0, 0, 0)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  white-space: nowrap;
+  color: transparent;
+}
+.gradient-text {
+  background: linear-gradient(
+    90deg,
+    rgb(170, 98, 98),
+    rgb(158, 158, 161),
+    rgb(143, 204, 179),
+    rgb(208, 161, 74),
+    rgb(202, 110, 202),
+    rgb(125, 177, 177)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /* display: inline-block; */
+  white-space: nowrap;
+}
+.intro-image-container {
+  box-shadow: 2px 2px 43px rgba(215, 238, 133, 0.4);
+  display: flex;
+  border: 5px solid rgb(79, 79, 31);
+  border-radius: 175px;
+  width: 350px;
+  height: 350px;
+  align-items: center;
+  background-image: radial-gradient(
+    circle,
+    rgba(230, 10, 10, 0.4),
+    rgba(231, 66, 66, 0.4)
+  );
+}
+.intro-image {
+  flex: 1;
+}
+
+.header-title {
+  margin: 12px 0;
+  padding-right: 82px;
+}
+.header-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+/* typing and deleting */
+#typing-effect {
+  font-family: Arial, sans-serif;
+  overflow: hidden; /* Ensure text doesn't overflow the container */
+  white-space: nowrap; /* Prevent line breaks */
+  border-right: 2px solid black; /* Simulate the cursor */
+  animation: typing 2s steps(180, end),
+    /* Typing animation */ blink-caret 0.75s infinite alternate; /* Blinking cursor */
+}
+
+/* Typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Blinking cursor animation */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
