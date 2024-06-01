@@ -1,4 +1,5 @@
 import "./header.css";
+import HeaderImage from "../assets/images/logo1.jpg"
 export default Header;
 function Header() {
   return (
@@ -6,7 +7,7 @@ function Header() {
       <div className="header-row">
         <ul className="navbar-list">
           <li>
-            <img className="logo-image" src="../src/assets/images/logo1.jpg" />
+            <img className="logo-image" src={HeaderImage} />
           </li>
           <li>
             <a href="#home">Home</a>
