@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./intro.css";
 import image from "../assets/images/IMG_20240506_113151_661.jpg";
 
-const texts = ["Software Engineer", "Developer", "Front-end Designer"];
+const texts = ["Software Engineer", "Developer", "Frontend Designer"];
 
 const Intro = () => {
   const [displayText, setDisplayText] = useState("");
@@ -41,7 +41,7 @@ const Intro = () => {
     <section className="intro">
       <div className="intro-overlay"></div>
       <div className="intro-content">
-         <div className="intro-image">
+        <div className="intro-image">
           <div className="intro-image-container">
             <img
               className="header-image"
