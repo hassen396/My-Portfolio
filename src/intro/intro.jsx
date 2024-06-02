@@ -51,7 +51,7 @@ const Intro = () => {
           </div>
         </div>
         <div className="intro-text">
-          <div className="header-title gradient-text1">Hi this is Hassen</div>
+          <div className="header-title">Hi this is Hassen</div>
           <div className="header-subtitle gradient-text">
             I&#8217;m a <span id="typing-effect">{displayText}</span>
           </div>
